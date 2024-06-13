@@ -1,0 +1,22 @@
+h1{
+    color: red;
+}
+p{
+    color : #008000;
+    font-size : 16px;
+    font-family: 'Times New Roman';
+    font-weight: bold;/* thin-100,light-300,normal-400,medium-500,semi-bold-600,blod-700,extra-bold,black */
+    text-align: justify;/*left,center right justify*/
+    text-decoration: overline;/*underline,line-through,overline none*/
+    text-transform:capitalize;/*uppercase ,lowercase, capitalize, none*/
+    line-height: 1.5;
+    width: 600px;
+    border-bottom: 1px solid red;/* 1px solid: duong lien  */
+    background-color: yellow;
+    float: left;/*dồn các p với nhau*/
+    padding: 15px;/*giản 2 P ra khi dồn vào*/
+}
+body{
+    background-color: rgb(21, 125, 216);
+
+}
