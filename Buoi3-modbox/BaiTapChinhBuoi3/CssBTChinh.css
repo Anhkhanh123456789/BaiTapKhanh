@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+}
+.top-row {
+    display: flex;
+    justify-content: space-between; /* Căn các cột trong hàng đầu tiên */
+    width: 100%; /* Độ rộng tối đa */
+    max-width: 1000px; /* Giới hạn độ rộng */
+    margin-bottom: 20px; /* Khoảng cách dưới */
+}
+.column {
+    flex: 1; /* Căn chỉnh tỉ lệ để cột tự động thay đổi kích thước */
+    padding: 10px; /* Đệm cho các cột */
+    border: 1px solid #ccc; /* Viền cho các cột */
+    background-color: #f0f0f0; /* Màu nền cho các cột */
+    font-family: Arial, Helvetica, sans-serif; 
+}
+img {
+    width: 100%; /* Đảm bảo hình ảnh lấp đầy cột */
+    display: block; /* Loại bỏ khoảng trắng phía dưới hình ảnh */
+}
+.column:nth-child(1) {
+    flex-basis: 70%; /* Cột 1 chiếm 70% */
+}
+.column:nth-child(2) {
+    flex-basis: 30%; /* Cột 2 chiếm 30% */
+}
+.column p {
+    margin: 0; /* Xóa margin mặc định của đoạn văn bản */
+}
+h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 0.1; 
+}
+p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;  
+}
+h5{
+    font-size: 16px;  
+    font-weight:normal;
+    line-height: 0.1;
+}
+h2{
+    font-size: 16px;
+    line-height: 0.1;
+}
+h3{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.6;
+}
+ul {
+    padding-left: 20px; /* Để lại một khoảng đệm bên trái cho danh sách */
+    line-height: 1.6;
+}
+.Ngoaingu{
+    margin-top: 20px;
+}
+.Tinhoc{
+    font-size: 40px;
+    margin-top: 20px;
+    position: relative;
+    top: -155px;
+    left: 350px; 
+}
+.Ngoaingu img, .Tinhoc{
+    max-width: 30%;
+}
+.ThuocA{
+    position: relative;
+    top: -30px;
+    left: 100px; 
+}
+.ThuocT{
+    position: relative;
+    top: -30px;
+    left: 100px; 
+}
+.ThuocW{
+    position: relative;
+    top: -32px;
+    left: 100px; 
+}.ThuocE{
+    position: relative;
+    top: -32px;
+    left: 100px; 
+}
+.ChuongChi{
+    margin-top: 20px;
+    background-color: aqua;
+}
+.ChuongChi h1 {
+    padding-top: 30px;   
+    padding-left: 10px;
+}
+.ChuongChi ul{
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
