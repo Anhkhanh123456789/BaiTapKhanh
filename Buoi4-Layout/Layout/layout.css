@@ -1,0 +1,193 @@
+*{
+margin: 0; /*Đưa bố cực của cả web về mốc để dễ căn chỉnh */
+padding: 0;
+}
+body{ 
+    background-color: #fafafa; /*Đỉnh nghĩa cho body các thông số */
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #565656;
+    text-align: left;
+    line-height: 1.5;
+
+}
+a{
+text-decoration: none; /*Xóa gạch chân thể click đường link*/
+}
+img{
+    max-width:  100%;
+}
+li{
+    list-style: none; /*Xóa các dấu chấm của thẻ li*/
+}
+.section{
+    float:left; /* dồn về bên trái và chiếm 100% của cả trang web*/
+    width: 100%;
+}
+.container{
+    width: 1200px; /*container là định nghĩa cho các phần thông tin của web và đưa nó về giữa trang web*/
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .l-sidebar{
+    float: left ;
+    width: 25%;
+}
+.main-content{
+    float: left;
+    width: 75%;
+} */
+ .header{
+    padding-top: 20px; /*định nghĩa cho  */
+    padding-bottom: 20px;
+ }
+ .header .logo{
+    font-size: 20px;
+    text-transform: uppercase;
+    float: left;
+ }
+ .header .reviews{
+    float: right;
+    font-size: 18px;
+ }
+ .nav ul{
+    float: left;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid #535353;
+    border-bottom: 1px solid #535353;
+ } 
+ /*Đối với các thẻ khác thẻ div thì phải gọi tên tag đăc thù rồi đến class vi dụ dưới*/
+ .nav ul li{
+    float: left;
+    margin-right: 25px;
+    text-transform: capitalize;
+ }
+ .nav ul .last{
+    float: right;
+    margin-right: 0;
+ }
+ .pizza{
+    float: left;
+    width: 100%;
+    margin: 30px;
+ }
+ .pizza img{
+    max-width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 85px;
+ }
+ .description{
+    float: left;
+    width: 100%;
+ }
+ .ingredients{
+    float: left;
+    width: 50%;
+    line-height: 2;
+ }
+ .directions{
+    float: right;
+    width: 50%;
+    line-height: 3;
+ }
+ .directions h2{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 20px;
+ }
+.directions .steps{
+    font-size: 16px;
+    color: rgb(152, 154, 154);
+}
+.ingredients h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+   
+}
+.ingredients h4{
+    text-transform: capitalize;
+    font-weight:bold;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.directions .Dong1, .Dong2, .Dong3, .Dong4 {
+   float: left;
+   margin-bottom: 10px;
+}
+.directions .Dong1 .num {
+    font-size: 16px;
+    color:white;
+    background-color: rgb(146, 142, 142); 
+    padding: 10px;
+    font-weight: bold;
+   
+    float: left;
+    margin-right: 20px; 
+    line-height: 1;
+ }
+ .directions .Dong1 .text {
+    line-height: 1.8;
+    padding-top: 7px;   
+    float: right;
+    width: 86%;
+
+ }
+ .directions .Dong2 .num2 {
+    font-size: 16px;
+    color:white;
+    background-color: rgb(146, 142, 142); 
+    padding: 10px;
+    font-weight: bold;
+    
+    float: left;
+    margin-right: 20px; 
+    line-height: 1;
+ }
+ .directions .Dong2 .text2 {
+    line-height: 1.8;
+    padding-top: 7px;   
+    float: right;
+    width: 86%;
+    
+ }
+ .directions .Dong3 .num3 {
+    font-size: 16px;
+    color:white;
+    background-color: rgb(146, 142, 142); 
+    padding: 10px;
+    font-weight: bold;
+   
+    float: left;
+    margin-right: 20px; 
+    line-height: 1;
+ }
+ .directions .Dong3 .text3 {
+    line-height: 1.8;
+    padding-top: 7px;   
+    float: right; 
+
+ }
+ .directions .Dong4 .num4 {
+    font-size: 16px;
+    color:white;
+    background-color: rgb(146, 142, 142); 
+    padding: 10px;
+    font-weight: bold;
+   
+    float: left;
+    margin-right: 20px; 
+    line-height: 1;
+ }
+ .directions .Dong4 .text4 {
+    line-height: 1.8;
+    padding-top: 7px;   
+    float: right; 
+ }
