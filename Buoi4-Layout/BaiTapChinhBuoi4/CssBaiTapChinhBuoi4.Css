@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #565656;
+    text-align: left;
+    line-height: 1.5;
+}
+a{
+    text-decoration:  none;
+}
+img{
+    max-width: 80%;
+
+}
+li{
+    list-style: none;
+  
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1000px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header .HinhNen {
+    background-image: url(HinhNen.jpg);
+    background-size: cover; /* Thu nhỏ hình nền về 20% kích thước gốc */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Cố định hình nền */
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Màu chữ trắng để tương phản với hình nền */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Đổ bóng chữ để dễ đọc hơn */
+    padding: 20px; /* Đặt khoảng cách đệm xung quanh chữ */
+    box-sizing: border-box; /* Bao gồm padding trong chiều rộng và chiều cao của phần tử */
+}
+.header .TieuDe1{
+    text-transform: capitalize;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    color: rgb(126, 169, 170);
+
+}
+.header .TongThongTin1{
+    padding-bottom: 100px;
+    text-align: center;
+}
+.header .ThongTin1{
+    color: rgb(126, 169, 170);
+}
+.nav .form-group {
+    margin-top: 30px;
+    text-align: center; /* Canh giữa nội dung của form */
+    margin-bottom: 60px;
+       
+}
+.nav  input{
+    font-family: Arial, Helvetica, sans-serif;
+    color:green;
+    padding: 10px;
+}
+.nav button{
+    padding: 10px;
+
+}
+.main .TieuDe2{
+    font-weight: normal; 
+    color: rgb(77, 100, 100);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.Hang1 , .HaiHang1 , .Cot1 , .BonHang1  {
+    float: left;
+    width: 25%;
+}
+.Hang2 , .HaiHang2 , .Cot2 , .BonHang2 {
+    float: right;
+    width: 25%;
+}
+.PhanTu {
+    text-align: center;
+    margin-bottom: 300px;
+}
+.PhanTu p , .PhanTu2 p  {
+    background-color: rgb(65, 65, 66);
+    color: #fafafa;
+    width: 25%;
+    margin-left: 75px;
+    margin-top: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    position: relative;
+    z-index: 1;
+}
+.PhanTu2{
+    text-align: center;
+    height: 100px;
+ 
+}
+.PhanTu3 , .PhanTu4  {
+    text-align: center;
+}
+.PhanTu3b{
+    text-align: left;
+}
+.mot{
+    background-color: rgb(194, 197, 197);
+    height: 600px;
+    padding-top: 20px;
+}
+.hai{
+   
+    height: 320px;
+    margin-bottom: 70px;
+}
+
+.main .TieuDe3 , .TieuDe4{
+    margin-top: 50px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main ul li{
+   
+    float: left;
+    margin-right: 5px;
+    font-size: 10px;
+}
+.main ul{
+    margin-top: 5px;
+    text-align: left;
+    margin-left: 24px;     
+    margin-bottom: 8px; 
+    height: 13px;  
+}
+.main .test{
+    margin-left: 24px;
+    margin-right: 12px;  
+    text-align: left;
+    text-transform: capitalize;
+}
+.main .Ba{
+    background-color: rgb(194, 197, 197);
+    height: 310px;
+}
+.main .TieuDe4{
+    padding-top: 30px;
+}
+.main .PhanTu4{
+    margin-top: -20px;
+}
+.PhanTu4 p  {
+    background-color: rgb(65, 65, 66);
+    color: #fafafa;
+    width: 25%;
+    margin-left: 75px;
+    margin-top: -120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
