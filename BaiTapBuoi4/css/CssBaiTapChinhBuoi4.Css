@@ -32,7 +32,7 @@ li{
     margin-right: auto;
 }
 .header .HinhNen {
-    background-image: url(HinhNen.jpg);
+    background-image: url('../images/HinhNen.jpg');
     background-size: cover; /* Thu nhỏ hình nền về 20% kích thước gốc */
     background-repeat: no-repeat;
     background-position: center;
