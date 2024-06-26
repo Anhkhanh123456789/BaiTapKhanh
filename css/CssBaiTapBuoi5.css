@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #565656;
+    text-align: left;
+    line-height: 1.5;
+}
+a{
+    text-decoration:  none;
+}
+img{
+    max-width: 80%;
+
+}
+li{
+    list-style: none;
+  
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    background-image: url('../images/BackgroundBT5.jpeg');
+    background-size: cover;   
+}
+
+.header .bg-header{
+    background-color: #ebe8e880;/*Them 80 để tạo màu nền trong suốt*/
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+    height: 500px;
+}
+.header .container{
+    margin-top: 160px;
+    
+}
+.header .textgroup{
+    background-color: #fafafa;
+    width: 40%;
+    text-align:  center;
+    margin-left: 350px;
+}
+.header h1{
+    
+    text-transform:  uppercase;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 40px;
+    
+}
+.header .text3{
+    font-weight: bolder;
+}
+.header .text2{
+    z-index: 2;
+    position: relative;
+    margin-top: -40px;
+}
+.header .text3{
+    background-color: #fafafa;
+    width: 40%;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+.Title1{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.Title1 span{
+    font-weight: bold;
+}
+.Title2 {
+margin-top: 20px;
+color: #8d8b8b;
+font-size: 16px;
+float:  right;
+width: 50%;
+margin-bottom: 20px;
+}
+.Title3{
+    margin-right: 200px;
+}
+.Title3 .row1{
+float: left;
+width: 50%;
+
+}
+.Title3 .item1{
+    margin-top: 30px;
+    text-align: right;
+    margin-right: 130px;
+  
+}
+.Title3 .text6{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+
+}
+
+.Title3 .imgrow{
+    background-color: yellow;
+    width: 35%;  
+    margin-bottom: 50px;
+    
+}
+.Title3 .text7{
+    color: #8d8b8b;  
+    text-align: 16px;
+}
+.Title3 .text8{
+    padding-top: 200px;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.Title3 .item2 {
+    float: right;
+}
+.Title3 .images1{
+   float: left;
+   width: 50%;
+   height: 600px;
+}
+.img1{
+    max-width: 150%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử cha */
+    margin-top: 220px; /* Khoảng cách từ trên xuống */
+    float: right; /* Đưa hình ảnh sang phải */
+    margin-right: 50px; /* Dịch chuyển hình ảnh sang phải 200px */
+}
+.img2{
+    max-width: 150%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử cha */
+    margin-top: 140px; /* Khoảng cách từ trên xuống */
+    float: left; /* Đưa hình ảnh sang phải */
+    margin-left: 0px; /* Dịch chuyển hình ảnh sang phải 200px */
+}
