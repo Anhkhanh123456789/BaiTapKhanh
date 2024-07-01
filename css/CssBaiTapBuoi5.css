@@ -42,9 +42,11 @@ li{
     padding-bottom: 90px;
     text-align: center;
     height: 500px;
+    
 }
 .header .container{
     margin-top: 160px;
+    padding-right: 120px;
     
 }
 .header .textgroup{
@@ -87,13 +89,14 @@ li{
 .Title1 span{
     font-weight: bold;
 }
-.Title2 {
+.Title2 .container {
 margin-top: 20px;
 color: #8d8b8b;
 font-size: 16px;
 float:  right;
 width: 50%;
 margin-bottom: 20px;
+text-align: left;
 }
 .Title3{
     margin-right: 200px;
@@ -119,7 +122,7 @@ width: 50%;
 }
 
 .Title3 .imgrow{
-    background-color: yellow;
+    background: rgb(248, 219, 165);
     width: 35%;  
     margin-bottom: 50px;
     
@@ -155,4 +158,205 @@ width: 50%;
     margin-top: 140px; /* Khoảng cách từ trên xuống */
     float: left; /* Đưa hình ảnh sang phải */
     margin-left: 0px; /* Dịch chuyển hình ảnh sang phải 200px */
+}
+.Title4{
+    background-color: rgb(243, 234, 224);
+    margin-top : 80px;
+}
+.Title4vs1vs1{
+    padding-top: 40px;
+    float: left;
+    width: 33%
+    
+    
+}
+
+.Title4  .LV1 h1{
+text-transform: uppercase;
+font-size: 30px;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-weight: normal;
+line-height: 1;
+margin-left: -100px;
+
+
+}
+.LV1 span{
+    font-weight: bolder;
+}
+.Title4 .LV1 p{
+    padding-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #8d8b8b;  
+    margin-left: -50px;
+
+}
+.Title4 .Title4vs1vs1 .readmore {
+    text-align: left;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.5; /* Để cách dòng nếu cần */
+    position: relative; /* Tạo vị trí tương đối cho phần tử con */
+    padding-top: 50px;
+}
+
+.Title4 .readmore::after {
+    content: ''; /* Tạo phần tử giả ::after */
+    position: absolute; /* Vị trí tuyệt đối */
+    left: 0; /* Dịch chuyển về bên trái */
+    bottom: 0; /* Dịch chuyển lên phía dưới */
+    width: 100%; /* Chiều rộng là 100% */
+    height: 1px; /* Chiều cao của đường gạch chân */
+    background-color: #000; /* Màu của đường gạch chân */
+    transform: translateY(5px); /* Dịch chuyển đường gạch chân xuống 5px */
+    margin-left: -1px;
+    font-size: 20px;
+   
+}
+.Title4 .LV2 {
+    float: right;
+    width: 65%;
+    
+}
+.Title4 .ground4{
+    float: left;
+    width: 30%;
+    box-sizing: border-box; /*các các đều ra*/
+    padding: 20px;
+    padding-top: 0;
+ 
+}
+.Title4 h3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #000;
+
+}
+.Title4 p{
+    color: #8d8b8b;  
+    font-size: 16px;
+    
+}
+.Title4 .G3{
+    margin-right: -50px;
+    float: right;
+}
+.Title4 .G2{
+    margin-left: 50px;
+}
+
+.cafefood{
+    padding-top: 400px;
+}
+.Title4 .groundcafe{
+float: left;
+width: 50%;
+}
+.Title4 .cafeLv2{
+    background: rgb(248, 219, 165);
+    width: 35%;  
+    margin-bottom: 50px;
+    height: 500px;
+}
+/* .Title4 .imgcafe{
+    margin-top: 55px;
+    
+    margin-right: -270px;
+    position: relative;
+    z-index: 1;
+} */
+.imgcafe {
+    max-width: 100%;
+    margin-top: 55px;
+    float: right;
+    margin-right: -30px;
+    position: relative;
+    z-index: 1;
+    height: 400px; /* Điều chỉnh phần trăm theo nhu cầu */
+}
+.Title4 .cafeh1{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: right;
+   
+}
+.Title4 span{
+    font-weight: bolder;
+}
+.Title4 .cafep{
+    text-align: right;
+    color: #8d8b8b; 
+    width: 70%;
+    float: right;
+    
+    
+}
+.Title4 .groundcafesmall{
+    float:  right;
+    margin-top: 190px;
+    margin-right: -100px;
+}
+.HaveadIlude{
+    margin-top: 600px;
+}
+.Title4 .Haverow{
+    float: left;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.Haveimg{
+    max-width: 100%;
+    width: 300px;
+}
+.Title4 h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Title4 p{
+    color: #8d8b8b;  
+}
+.b-genjoy{
+    background-image: url('../images/Background2BT5.jpeg');
+    background-size: cover;  
+    height: 500px; 
+ 
+    background-color: #ebe8e880;/*Them 80 để tạo màu nền trong suốt*/
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;  
+}
+.iconenjoy{  
+    height: 50px;
+}
+.enjoy h1{
+text-transform: uppercase;
+font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+}
+.enjoy .container{
+    padding-top: 400px;
+}
+.sample{
+    background-color: darkslateblue;
+    height: 200px;
+}
+.sample p{
+    color: #8d8b8b;  
+    font-size: 30px;
+    text-align: center;
+    width: 70%;
+    padding-left: 200px;
+    padding-top: 50px;
 }
