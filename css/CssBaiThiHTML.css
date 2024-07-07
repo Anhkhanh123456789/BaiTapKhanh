@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #565656;
+    text-align: left;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 150%;
+
+}
+li{
+    list-style: none;
+  
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+li{
+    font-style: normal;
+    float: left;
+    margin-left: 40px;
+    font-size: 18px;  
+    margin-top: 20px;
+    padding-top: 10px;
+    color: #747272;
+    
+    
+}
+.header .li1{
+    background-color:rgb(206, 135, 4) ;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+.header .Title{
+    float: left;
+    width: 50%;
+    box-sizing: border-box; /*các các đều ra*/
+}
+.h1Big{
+ font-weight: normal;
+ text-transform: capitalize;
+ color: rgb(206, 135, 4);
+ padding-top: 20px;
+ padding-left: 20px;
+ padding-bottom: 20px ;
+}
+.Sheet1 .container{
+    margin-top: 40px;
+}
+.Sheet1 .h2Sheet1{
+margin-left: 500px;
+text-transform: capitalize;
+font-weight: normal;
+color: rgb(206, 135, 4);
+
+}
+.Sheet1 .pSheet1{
+    font-size: 18px;
+    color: #747272;
+    width: 50%;
+    margin-left: 300px;
+    text-align: center;
+}
+.Sheet2 .row{
+    float: left;
+    width: 25%;
+    box-sizing: border-box; /*các các đều ra*/
+}
+.Sheet2 .container{
+    margin-top: 50px;
+}
+.Sheet2 .imgrow{
+    max-width: 92%;
+}
+.Sheet2 h4{
+    color: rgb(206, 135, 4);
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.Sheet2 p{
+    font-size: 16px;
+    color: #747272;
+    margin-top: 15px;
+    
+}
+.Sheet2 .BtuText{
+    background-color:rgb(206, 135, 4); 
+    width: 40%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fafafa;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;  
+}
+
+.Sheet3 .container{
+   margin-top: 80px;
+}
+.Sheet3 .rowSheet3{
+    float: left;
+    width: 45%;
+    box-sizing: border-box; /*các các đều ra*/
+}
+.Sheet3 .imgTitleSheet3{
+    max-width: 100%;
+    margin-top: 20px;
+}
+.Sheet3 .TitleSheet3{
+    font-size: 25px;
+    font-weight: normal;
+    color: rgb(206, 135, 4); 
+}
+.Sheet3 .pTitleSheet3{
+    font-size: 16px;
+    color: #747272;
+    margin-top: 20px;
+}
+.Sheet3 .BtuSheet3{
+background-color: rgb(206, 135, 4); 
+border-radius: 5px;
+width: 25%;
+padding: 10px;
+padding-left: 20px;
+color: white;
+font-size: 20px;
+text-transform: uppercase;
+}
+.Sheet3 .rowGround1{
+    float: left;
+    box-sizing: border-box; /*các các đều ra*/
+    margin-left: 20px;
+}
+.Sheet3 .TitleGround1{
+    font-size: 25px;
+    color: rgb(206, 135, 4); 
+
+}
+.Sheet3 .pGround1{
+    color:rgb(114, 114, 243);
+    font-size: 18px;
+    text-decoration: underline; /* Gạch chân chữ */
+    margin-top: 20px;
+}
+.Sheet3 .Lv1{
+    padding-left: 30px;
+}
+
+.Sheet3 .Groud2{
+    margin-top: 330px;
+    margin-left: 20px;
+ 
+    width: 110%;
+}
+.Sheet3 .TitleGround2vs1{
+    font-size: 25px;
+    color: rgb(206, 135, 4); 
+}
+.Sheet3 .TitleGround2vs2{
+    margin-top: 20px;
+}
+.Sheet3 .ingredient1vs1{
+    float:  left;
+}
+.Sheet3 .ingredient2vs1{
+    float:  left;
+}
+.Sheet3 .ingredient3vs1{
+    float:  left;
+}
+.Sheet3 .Lv2{
+    width: 48%; 
+    color: #747272;
+    line-height: 1.5;
+    border-bottom: 1px solid #747272 ;
+}
+.Sheet3 h3{
+    color: rgb(206, 135, 4); 
+    font-size: 25px;
+    font-weight: normal;  
+}
+.Sheet3 .imgGrond2{
+    max-width:80% ;
+}
+.Sheet3 .Lv4{
+margin-top: -10px;
+}
+.Sheet3 #Lv5{
+    margin-left:-40px ;
+    
+}
+.Sheet3 .TitleGround2vs3{
+    
+   padding-top: 160px;
+} 
+.Sheet4 {
+    margin-top: 100px;
+    background-image: url('../images/HinhnenTHi.png');
+    background-size: cover; 
+} 
+.Sheet4 h3{
+    color: rgb(206, 135, 4); 
+    font-size: 25px;
+    font-weight: normal; 
+
+}
+.Sheet4 p{
+    color: #e9e6e6;
+    font-size: 18px;
+}
+.Sheet4 img{
+    max-width: 80%;
+}
+.Sheet4 .container{
+    margin-top: 50px;
+}
+.Sheet4 .card-text{
+    color: black;
+}
+.Sheet4 .space{
+    margin-top: 50px;
+}
+.Sheet4 .pSheet4vs1{
+    color: yellow;
+    text-decoration: underline; /* Gạch chân chữ */
+}
+.Sheet4 .collv2{
+    margin-left: -50px;
+}
+
+.Sheet4 .collv3{
+margin-left: -120px;
+}
+.Sheet4 .collv4{
+    margin-left: -50px;  
+}
+.Sheet4 .pSheet4vs2{
+    width: 80%;
+    border-bottom:  1px solid white ;
+    padding-bottom: 50px;
+}
+.Sheet4 .notp{
+    border-bottom:  none;
+}
+.Sheet4 .Btu{
+    text-transform: uppercase;
+    background-color: #747272;
+    width: 50%;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 40px;
+}
+.Sheet4 .btuBrow{
+    padding-left: 53px;
+    margin-top: 50px;
+}
+.Sheet4 .pSheet4vs3{
+    margin-top: 50px;
+    width: 80%;
+}
+.Sheet4 .card{
+    border-radius: 0px;
+    background-color: rgb(175, 173, 173);;
+}
+.Sheet4 .NoteEnd{
+    margin-top: 180px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
