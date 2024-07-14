@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lô tô</h1>
+    <script type="text/javascript">
+        //Tạo ngẫu nhiên 1 mảng có 23 giá trị(tương đương 23 giải)0-99
+        //Yêu cầu người chơi nhập vào con số lựa chọn
+        //yêu cầu người chơi đặt cược số tiền
+        //kiểm tra và thông báo số tiền nhận được
+        // tỉ lê 23k -80k nếu trúng 1 số
+        //var r = Math.random();
+        var arr = [];
+        var isChoilai = true;
+        for(var i =0;i<23;i++){
+            var r = Math.random();
+            arr[i]= parseInt(r*100);
+        }
+      
+        
+        console.log(arr);
+        while(isChoilai)
+        {
+            var arrimportnumber =[];
+            var arrMoney =[];
+            var lengthn=0;
+            var isCon = false;
+            while(lengthn <5)
+            {
+              
+            
+                while(true)
+                {
+                    var importanumber = prompt("Nhập số");
+                    importanumber = parseInt(importanumber);
+                    if( isNaN(importanumber) )
+                   {
+                    alert(`Điền Số không hợp lệ `);
+                   }
+                   else
+                   {
+                    break;
+                   }
+                }
+               
+               
+                for(var k of arrimportnumber)
+                {
+                    if(k==importanumber )
+                   { 
+                    isCon = true;
+                    alert(`Số ${importanumber} đã chọn số này rồi hay chọn lại`);
+                    break;                  
+                   }
+                   if( isNaN(importanumber) )
+                   { 
+                    isCon = true;
+                    alert(`Điền Số không hợp lệ `);
+                    break;                  
+                   }
+                   
+                }
+                if(isCon)
+                {
+                    isCon = false;
+                    continue;
+                }   
+                var iswhie = true;
+                arrimportnumber[lengthn]= importanumber;
+                while(iswhie)
+                {
+                    var money = prompt("Nhập số tiền ");
+                    money = parseInt(money);
+                    if(isNaN(money))
+                    {  
+                        alert("Nhập sai Số tiền");
+                        continue;         
+                    }
+                    arrMoney[lengthn] = money;
+                    lengthn++;
+                    iswhie = false;
+                }
+               
+
+            }
+            console.log(arrimportnumber);   
+            console.log(arrMoney);
+            
+            var moneySum = [0,0,0,0,0];
+            var tyle = 80/23;
+            var isFlase = true;
+            var temp =0;
+            var numberTrue =[];
+            // for(var x of arr)
+            // {
+            //    for(var y of arrimport)
+            //     {
+            //         if(x==y)
+            //         {
+            //             money= money*tyle;
+            //             moneySum = moneySum+money;
+            //             isFlase = false;
+            //         }
+                   
+            //     }
+            // }
+            var isT = false;
+            for(var x of arr)
+            {
+                for(var i =0;i<arrimportnumber.length;i++)
+                    {
+                        if(arrimportnumber[i]==x)
+                        {
+                            var isT = false;
+                            temp= arrMoney[i]*tyle;
+                            moneySum[i] = moneySum[i]+temp;
+                            for(var t of numberTrue)
+                                {
+                                    if(t == i)
+                                    {
+                                        ist = true;
+                                    }
+                                }
+                            if(!isT)
+                            {
+                                numberTrue.push(i);
+                                ist=false;
+                            }                       
+                            isFlase = false;
+                        }
+                    }
+            }
+            if(isFlase==true)
+            {
+                alert("Chúc bạn may mắn lần sau");
+                var comeback = confirm("Bạn có muốn chơi lại");
+                if(comeback)
+                {
+                    isChoilai = true;
+                }
+                else
+                {
+                    alert("Cảm ơn bạn đã chơi");
+                    isChoilai = false;
+                    
+                }
+            }
+            else
+            {   
+               console.log(moneySum);
+               console.log(numberTrue);
+               var i  = numberTrue.length -1;
+                 if(i==0 )
+                    {
+                        alert(`Số ${arrimportnumber[numberTrue[0]]} Tiền ${moneySum[numberTrue[0]]}`)
+                    }
+                    else  if(i==1)
+                    {
+                        alert(`Số ${arrimportnumber[numberTrue[0]]} Tiền ${moneySum[numberTrue[0]]} \n
+                        Số ${arrimportnumber[numberTrue[1]]} Tiền ${moneySum[numberTrue[1]]} `)
+                    }
+                    else  if(i==2)
+                    {
+                        alert(`Số ${arrimportnumber[numberTrue[0]]} Tiền ${moneySum[numberTrue[0]]} \n
+                        Số ${arrimportnumber[numberTrue[1]]} Tiền ${moneySum[numberTrue[1]]} \n
+                        Số ${arrimportnumber[numberTrue[2]]} Tiền ${moneySum[numberTrue[2]]}`)
+                    }
+                    else  if(i==3  )
+                    {
+                        alert(`Số ${arrimportnumber[numberTrue[0]]} Tiền ${moneySum[numberTrue[0]]} \n
+                        Số ${arrimportnumber[numberTrue[1]]} Tiền ${moneySum[numberTrue[1]]} \n
+                        Số ${arrimportnumber[numberTrue[2]]} Tiền ${moneySum[numberTrue[2]]} \n
+                        Số ${arrimportnumber[numberTrue[3]]} Tiền ${moneySum[numberTrue[3]]}`)
+                    }
+                    else  if(i==4  )
+                    {
+                        alert(`Số ${arrimportnumber[numberTrue[0]]} Tiền ${moneySum[numberTrue[0]]} \n
+                        Số ${arrimportnumber[numberTrue[1]]} Tiền ${moneySum[numberTrue[1]]} \n
+                        Số ${arrimportnumber[numberTrue[2]]} Tiền ${moneySum[numberTrue[2]]} \n
+                        Số ${arrimportnumber[numberTrue[3]]} Tiền ${moneySum[numberTrue[3]]} \n
+                        Số ${arrimportnumber[numberTrue[4]]} Tiền ${moneySum[numberTrue[4]]}`)
+                    }
+                
+
+               
+                var comeback = confirm("Bạn có muốn chơi lại");
+                if(comeback)
+                {
+                    isChoilai = true;
+                }
+                else
+                {
+                    alert("Cảm ơn bạn đã chơi");
+                    isChoilai = false;
+                    
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

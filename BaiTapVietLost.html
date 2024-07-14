@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập VietLost</title>
+</head>
+<body>
+    <h1>Bài tập VietLost</h1>
+    <script type="text/javascript">
+   
+        var isChoilai = true ;
+        while(isChoilai)
+        {   
+            var arr = [];
+            var i = 0;
+            while(i<6)
+            {
+                var r = Math.random();
+                if(r<=55)
+                {
+                    arr[i]= parseInt(r*100);
+                    i++;
+                }
+            }
+            console.log(arr);
+            var MangSochon = [];
+            var lengthhh = 0;
+            var isCon = false;
+            while(lengthhh<6)
+            {
+                while(true)
+                {
+                    var SoChon = prompt("Nhập số");
+                    SoChon = parseInt(SoChon);
+                    if( isNaN(SoChon) )          
+                    {
+                        alert(`Điền Số không hợp lệ 1 `);
+                    }
+                    else
+                    {
+                    break;
+                    }
+                }
+                for(var k of MangSochon)
+                {
+                    if(k==SoChon)
+                    { 
+                    isCon = true;
+                    alert(`Số ${SoChon} đã chọn số này rồi hay chọn lại `);
+                    break;                  
+                    }
+                    if( isNaN(SoChon) )
+                    { 
+                    isCon = true;
+                    alert(`Điền Số không hợp lệ 2 `);
+                    break;                  
+                    }                  
+                }
+                if(isCon)
+                {
+                    isCon = false;
+                    continue;
+                }  
+                MangSochon[lengthhh]= SoChon;
+                lengthhh++;
+            }
+            console.log(MangSochon);
+            var MangSoTrung =[];
+            for(var x  of arr)
+            {
+                for(var y of MangSochon)
+                {
+                    if(x==y)
+                    {
+                        MangSoTrung.push(y);
+                        
+                    }
+                }
+            }
+            console.log(MangSoTrung);
+            if(MangSoTrung.length==3)
+            {
+                alert(`- Trúng 3 số: 100K`);
+            }
+            else if(MangSoTrung.length==4)
+            {
+                alert(`- Trúng 4 số: 1M`);
+            }
+            else if(MangSoTrung.length==5)
+            {
+                alert(`- Trúng 5 số: 10M`);
+            }
+            else if(MangSoTrung.length==6)
+            {
+                alert(`- Trúng 6 số: Jackpot 10 tỷ.`);
+            }
+            else 
+            {
+                alert(`Chúc bạn may mắn lần sau`);
+            }           
+            var comeback = confirm("Bạn có muốn chơi lại");
+            if(comeback)
+            {
+                isChoilai = true;
+            }
+            else
+            {
+                alert("Cảm ơn bạn đã chơi");
+                isChoilai = false;
+                    
+            }          
+        }
+    </script>
+</body>
+</html>

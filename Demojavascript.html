@@ -120,24 +120,160 @@
         //Viết chương trình nhâp 3 số là 3 cảnh tam giác
         // tính chu vi và diện tích tam giác (nếu đúng là tam giác)
         //tính diện tích tam giác bằng công thưc herron
-        var a = prompt("Nhập cảnh a");
-        var b = prompt("Nhập cảnh b");
-        var c = prompt("Nhập cảnh c");
-        a  = parseFloat(a);
-        b = parseFloat(b);
-        c = parseFloat(c);
-        if(a+b>c && a+c>b && b+c>a && a>0 && b>0&c>0)
-        {
-            var chuvi = a+b+c;
-            var s = chuvi/2;
-            var herron  = Math.sqrt(s * (s - a) * (s - b) * (s - c));
-            console.log(`Chu vi là : ${chuvi} và Diện tích là : ${herron}`);
+      
+    //     var hoanthanh = false;
+    //     while(hoanthanh!= true){
+    //     var a = prompt("Nhập cảnh a");
+    //     var b = prompt("Nhập cảnh b");
+    //     var c = prompt("Nhập cảnh c");
+    //     a  = parseFloat(a);
+    //     b = parseFloat(b);
+    //     c = parseFloat(c);
+    //     if(a+b>c && a+c>b && b+c>a && a>0 && b>0&c>0)
+    //     {
+    //         var chuvi = a+b+c;
+    //         var s = chuvi/2;
+    //         alert(`Chu vi tam giác : ${chuvi}`);
+    //         var herron  = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    //         console.log(`Chu vi là : ${chuvi} và Diện tích là : ${herron}`);
+    //         alert(`Dien tich tam giác : ${herron}`);
+    //         hoanthanh = true;
 
-        }
-        else
+    //     }
+    //     else
+    //     {
+    //         console.log("Không phải là hình tam giác");
+    //         alert("Đây không phải là độ dài của 3 cảnh tam giác");
+    //         var check = confirm("Bạn có muốn nhập lại hay không");
+    //         if(check == true){
+    //             hoanthanh = false;
+    //         }
+    //         else{
+    //             hoanthanh = true;
+    //         }
+    //     }
+       
+    // }
+    // alert("Kết thúc tính toán");
+    // Viết chương trình tính lãi suất ngân hàng 
+    // input : Khách hàng nhập vào số tiền muốn gửi và số năm muốn gửi
+    // process : Lãi suất có định 8%/năm -- lãi kép(lãi cộng dồn và gốc)
+    // Output : tính tổng số tiền khách thu về sau khi gửi tiết kiểm
+
+
+    // Thêm
+    // input : KH nhập số tiền muốn gửi và số tiền ít nhất muốn có
+    //poress : Lãi suất cố định 8% mỗi năm và lãi kép
+    // Output tính số năm tối thiếu cần gửi để đặt dc số tiền yêu cầu như trên
+
+    // var isEnd = true;
+    // while(isEnd == true)
+    // {
+    //     var Sendmonney = prompt("Nhập số tiền muốn gửi ");
+    //     var SendYear = prompt("Nhập số năm muốn gửi"); 
+    //     Sendmonney = parseFloat(Sendmonney);
+    //     SendYear = parseInt(SendYear);
+    //     var numberYear = 1;
+    //     while(numberYear<=SendYear)
+    //     {          
+    //         Sendmonney = Sendmonney+Sendmonney*0.08;        
+    //         numberYear++;
+    //     }
+    //     alert(`Số tiền thu về ${Sendmonney}`);
+    //     var comeback = confirm("Bạn có muốn tính lại")
+    //     if(comeback == true)
+    //     {
+    //         isEnd = true
+    //     }
+    //     else
+    //     {
+    //         alert("Kết thúc hẹn gặp lại");
+    //         isEnd = false;
+    //     }
+
+    // }
+    // var Sendmonney2 = prompt("Số tiền muốn gửi");
+    // var resultmoney = prompt("Số tiền muốn có");
+    // Sendmonney2 = parseFloat(Sendmonney2);
+    // resultmoney = parseFloat(resultmoney);
+    // var Yead = 1;
+    // while(Sendmonney2<=resultmoney)
+    // {
+    //     Sendmonney2=Sendmonney2+Sendmonney2*0.08;
+    //     Yead++;
+
+    // }
+    // alert(`Số nằm để có tiền là ${Yead}`);
+
+     
+    // tính S = 1+2+3+....+n
+    // var n = prompt("Nhập n");
+    // n = parseInt(n);
+    // var number = 1;
+    // var S = 0;
+    // while(number<=n)
+    // {
+      
+    //     S = S+number;
+    //     number++;
+    // }
+    // alert(`Số S : ${S}`);
+    
+
+    // Nhập 1 số nguyên n
+    // tìm số ở vị trí thứ n trong dãy Fibinaci
+    // var nFi = prompt("Nhập vị trí số Fibonaci vị trí tính từ 0");
+    // nFi = parseInt(nFi);
+    // var Fn = 1;
+    // var Fo = 0;
+    // var Fm = 1;
+    // var i;
+    // if(nFi<0)
+    // {
+    //     Fn= 0;
+    // }
+    // else if(nFi ==1 || nFi ==2)
+    // {
+    //     Fn =1;
+    // }
+    // else 
+    // {
+    //     for(i = 2; i< nFi;i++)
+    //     {          
+    //         Fo = Fm;
+    //         Fm = Fn;
+    //         Fn = Fo+Fm;
+    //     }
+    // }
+   
+    // alert(`kết quả ${Fn}`);
+
+    var numberFI = prompt("Nhập Sô Fibinaci");
+    numberFI = parseInt(numberFI);
+    
+    var Fn = 1;
+    var Fo = 0;
+    var Fm = 1;
+    if(numberFI <= 0)
+    {
+       Fn = 0;
+    }
+    else if(numberFI == 1 || numberFI == 2)
+    {
+        Fn = 1;
+    }
+    else
+    {
+       
+        while(Fn+Fm<numberFI)
         {
-            console.log("Không phải là hình tam giác");
+            Fo = Fm;
+            Fm = Fn;
+            Fn = Fo+Fm;
         }
+    }
+    alert(`kết quả Số nhỏ gần nhất ${Fn}`);
+  
     </script>
 </body>
 </html>
