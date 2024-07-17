@@ -19,9 +19,9 @@
             minutes = (minutes < 10 ? "0" : "") + minutes;
             seconds = (seconds < 10 ? "0" : "") + seconds;
 
-            var day = currentDate.getDate();
-            var month = currentDate.getMonth() + 1; // getMonth() trả về index từ 0 đến 11, nên cộng thêm 1
-            var year = currentDate.getFullYear();
+            var day = currentTime.getDate();
+            var month = currentTime.getMonth() + 1; // getMonth() trả về index từ 0 đến 11, nên cộng thêm 1
+            var year = currentTime.getFullYear();
 
             // Định dạng ngày và tháng để có hai chữ số
             day = (day < 10 ? "0" : "") + day;
