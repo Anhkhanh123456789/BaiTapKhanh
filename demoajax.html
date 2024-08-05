@@ -93,7 +93,7 @@
                         <div class="card-body">
                           <h5 class="card-title">${p.title}</h5>
                           <p class="card-text">${p.description}</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" onclick ="addToCart(${p.id})" class="btn btn-primary">Add To Card</a>
                         </div>
                       </div>
                 </div>`;
@@ -122,7 +122,7 @@
                                 <div class="card-body">
                                 <h5 class="card-title">${p.title}</h5>
                                 <p class="card-text">${p.description}</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" onclick ="addToCart(${p.id})" class="btn btn-primary">Add To Card</a>
                                 </div>
                             </div>
                         </div>`;
@@ -164,7 +164,29 @@
                     }
                 })
         }
-        
+        async function addToCart(id){
+            const url =`https://dummyjson.com/products/${id}`;
+            var rs = await fetch(url);// là dữ liệu dạng string
+            var data = await rs.json(); // chuyển dữ liệu thành array
+            var product = {
+                id: id,
+                title: data.title,
+                thumbnail: data.thumbnail,
+                price: data.price,
+                buyQty: 1
+            }
+            var cart = localStorage.getItem("cart");//[{id:...,title:....}] // chỉ nhẫn dữ liệu dương String
+            if(cart ==null){
+                cart =[];
+            }else{
+                cart =JSON.parse(cart);    //ép string thành chuổi array           
+            }
+            cart.push(product);
+            cart = JSON.stringify(cart);// chuyển dữ liệu về dạng string
+            localStorage.setItem("cart",cart);          
+        }
+        // var demo = localStorage.getItem("demo","ABC");
+        // console.log(demo);
     </script>
 </body>
 </html>
