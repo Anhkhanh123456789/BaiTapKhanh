@@ -27,67 +27,67 @@
                         <div class="card" style="width: 70rem;"> 
                             <div class="row">
                                 <div class="col-3 ">
-                                    <h4 class="text">First Name<span>*</span></h4>  
+                                    <h4 class="text" id ="textFirstName">First Name</h4>  
                                 </div>
                                 <div class="col-3 colleft ">
-                                    <input type="text" class="form-control custom-input" placeholder="">
+                                    <input type="text" id="FirstName" placeholder="">
                                 </div>
                             </div>                                                                                              
                         </div>
                         <div class="card" style="width: 70rem;"> 
                             <div class="row">
                                 <div class="col-3 ">
-                                    <h4 class="text">Last Name<span>*</span></h4>  
+                                    <h4 class="text"  id ="textLastName">Last Name</h4>  
                                 </div>
                                 <div class="col-3 colleft ">
-                                    <input type="text" class="form-control custom-input" placeholder="">
+                                    <input type="text" id="LastName" placeholder="">
                                 </div>
                             </div>                                                                                              
                         </div>
                         <div class="card" style="width: 70rem;"> 
                             <div class="row">
                                 <div class="col-3 ">
-                                    <h4 class="text">Posttal Code<span>*</span></h4>  
+                                    <h4 class="text" id="textPosttalCode">Posttal Code</h4>  
                                 </div>
                                 <div class="col-3 colleft ">
-                                    <input type="text" class="form-control custom-input" placeholder="">
+                                    <input type="text" id="PosttalCode" placeholder="">
                                 </div>
                             </div>                                                                                              
                         </div>
                         <div class="card" style="width: 70rem;"> 
                             <div class="row">
                                 <div class="col-3 ">
-                                    <h4 class="text">Address<span>*</span></h4>  
+                                    <h4 class="text" id="textAddress">Address</h4>  
                                 </div>
                                 <div class="col-3 colleft ">
-                                    <input type="text" class="form-control custom-input" placeholder="">
+                                    <input type="text" id="Address" placeholder="">
                                 </div>
                             </div>                                                                                              
                         </div>
                         <div class="card" style="width: 70rem;"> 
                             <div class="row">
                                 <div class="col-3 ">
-                                    <h4 class="text">Call Phone<span>*</span></h4>  
+                                    <h4 class="text" id="textCallPhone">Call Phone</h4>  
                                 </div>
                                 <div class="col-3 colleft ">
-                                    <input type="text" class="form-control custom-input" placeholder="">
+                                    <input type="text" id="CallPhone" placeholder="">
                                 </div>
                             </div>                                                                                              
                         </div>
                         <div class="card" style="width: 70rem;"> 
                             <div class="row">
                                 <div class="col-3 ">
-                                    <h4 class="text">Email<span>*</span></h4>  
+                                    <h4 class="text" id="textEmail">Email<span>*</span></h4>  
                                 </div>
                                 <div class="col-3 colleft ">
-                                    <input type="email" class="form-control custom-input" placeholder="">
+                                    <input type="email" id="Email" placeholder="">
                                 </div>
                             </div>                                                                                              
                         </div>
                     </div>
                 </div> 
                 <div class="btu">
-                    <a href="#" onclick ="" class="btuContinue">CONTINUE TO BILLING</a>
+                    <a href="#" onclick ="getcheckout()" class="btuContinue">CONTINUE TO BILLING</a>
                 </div>       
            </div>
         </div>
@@ -113,6 +113,50 @@
                         </div>`;
                         list.innerHTML += p_html;
                     }
+        }
+        async function addToCart(id){
+            const url =`https://dummyjson.com/products/${id}`;
+            var rs = await fetch(url);// là dữ liệu dạng string
+            var data = await rs.json(); // chuyển dữ liệu thành array
+            var product = {
+                id: id,
+                title: data.title,
+                thumbnail: data.thumbnail,
+                price: data.price,
+                buyQty: 1
+            }
+            var cart = localStorage.getItem("cart");//[{id:...,title:....}] // chỉ nhẫn dữ liệu dương String
+            if(cart ==null){
+                cart =[];
+            }else{
+                cart =JSON.parse(cart);    //ép string thành chuổi array           
+            }
+            cart.push(product);
+            cart = JSON.stringify(cart);// chuyển dữ liệu về dạng string
+            localStorage.setItem("cart",cart);          
+        }
+        
+        function getcheckout()
+        {
+            const FirstName = document.getElementById("FirstName");
+            const LastName = document.getElementById("LastName");
+            const PosttalCode = document.getElementById("PosttalCode");
+            const Addresss = document.getElementById("Address");
+            const CallPhone = document.getElementById("CallPhone");
+            const Emaill = document.getElementById("Email");
+            var textFirstName = document.getElementById("textFirstName")
+            var textLastName = document.getElementById("textLastName");
+            var textPosttalCode = document.getElementById("textPosttalCode");
+            var textAddresss = document.getElementById("textAddress");
+            var textCallPhone = document.getElementById("textCallPhone");
+            var textEmaill = document.getElementById("textEmail");
+            console.log(FirstName.value);
+            if(FirstName.value==""){
+                textFirstName.style.color = "red";              
+            }
+            if(LastName.value==""){
+                textFirstName.style.color = "red";            
+            }
         }
         getdata() ;
     </script>
