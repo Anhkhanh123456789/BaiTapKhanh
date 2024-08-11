@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Thi javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/cssbaithijavascript.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <div class="titleleft">
+                <div class="titleileftitem ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </div>
+                <div class="titleileftitem ">
+                    <h5>Photos</h5>
+                </div>         
+            </div>
+            <div class="titleright">
+                <div class="titlerightitem search"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </div>
+                <div class="titlerightitem">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+                </div>             
+            </div>
+        </div>
+        <div class="UIShow">
+            <div class="row">
+                <div class="col-4">
+                    <div class="itemcard">
+                        <div class="card" style="width: 27rem;" onclick="showImg(`kiwis`)">
+                           <div class="row">
+                                <div class="col-4">
+                                    <img src="images/kiwis1.JPG" alt="">
+                                </div>
+                                <div class="col-6 text">
+                                    <h5>Kiwis</h5>
+                                    <p>Collection of high resolution fruit photoshoop</p>                                
+                                </div>
+                                <div class="col-2">
+                                    <p class="month">May 8</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="itemcard">
+                        <div class="card" style="width: 27rem;" onclick="showImg(`lemons`)">
+                           <div class="row">
+                                <div class="col-4">
+                                    <img src="images/lemons1.jpg" alt="">
+                                </div>
+                                <div class="col-6 text">
+                                    <h5>Lemons</h5>
+                                    <p>Collection of high resolution fruit photoshoop</p>                                
+                                </div>
+                                <div class="col-2">
+                                    <p class="month">May 8</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="itemcard">
+                        <div class="card" style="width: 27rem;" onclick="showImg(`strawberries`)">
+                           <div class="row">
+                                <div class="col-4">
+                                    <img src="images/strawberries1.jpg" alt="">
+                                </div>
+                                <div class="col-6 text">
+                                    <h5>Strawberries</h5>
+                                    <p>Collection of high resolution fruit photoshoop</p>                                
+                                </div>
+                                <div class="col-2">
+                                    <p class="month">May 8</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="itemcard">
+                        <div class="card" style="width: 27rem;"onclick="showImg(`figs`)">
+                           <div class="row">
+                                <div class="col-4">
+                                    <img src="images/figs1.jpg" alt="">
+                                </div>
+                                <div class="col-6 text">
+                                    <h5>Figs</h5>
+                                    <p>Collection of high resolution fruit photoshoop</p>                                
+                                </div>
+                                <div class="col-2">
+                                    <p class="month">May 8</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="itemcard">
+                        <div class="card" style="width: 27rem;" onclick="showImg(`nectarince`)">
+                           <div class="row">
+                                <div class="col-4">
+                                    <img src="images/nectarince1.jpg" alt="">
+                                </div>
+                                <div class="col-6 text">
+                                    <h5>Nectarince</h5>
+                                    <p>Collection of high resolution fruit photoshoop</p>                                
+                                </div>
+                                <div class="col-2">
+                                    <p class="month">May 8</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="itemcard">
+                        <div class="card" style="width: 27rem;" onclick="showImg(`watermelons`)">
+                           <div class="row">
+                                <div class="col-4">
+                                    <img src="images/watermelons1.jpg" alt="">
+                                </div>
+                                <div class="col-6 text">
+                                    <h5>Watermelons</h5>
+                                    <p>Collection of high resolution fruit photoshoop</p>                                
+                                </div>
+                                <div class="col-2">
+                                    <p class="month">May 8</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="OutputTitle">
+                        <div class="itemleft">
+                            <div class="Outleft">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                                </svg>
+                            </div>
+                            <div class="Outleft">
+                                 <h5>Kiwis</h5>
+                            </div>     
+                        </div>
+                        <div class="Outright">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                            </svg>
+                        </div>                             
+                    </div>
+                    <div class="OutputImg">
+                        <img src="images/figs1.jpg" alt="">
+                        <img src="images/figs2.jpg" alt="">
+                        <img src="images/figs3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    <script type="text/javascript">
+        function showImg(type){
+           
+        }
+    </script>
+</body>
+</html>

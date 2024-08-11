@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #565656;
+    text-align: left;
+    line-height: 1.5;
+}
+a{
+    text-decoration:  none;
+}
+img{
+    max-width: 100%;
+
+}
+li{
+    list-style: none;
+  
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1400px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+       
+}
+body{
+    background: linear-gradient(90deg, #512da8 0%, #7b1fa2 100%);
+}
+svg{
+    color: white;
+}
+.title{
+    background-color: rgb(64, 64, 206);
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.title h5{
+    color: white;
+    margin-left: 30px;
+}
+.titleright{
+    float: right;
+}
+.titleleft{
+    float: left;
+}
+.titleileftitem{
+    float: left;
+}
+.titlerightitem{
+    float: left;
+}
+.titleright .search{
+    margin-right: 30px;
+}
+.UIShow{
+    background-color: white;
+}
+.itemcard{
+    margin-top: 10px;
+}
+.UIShow .card{
+  padding: 10px;
+  padding-top: 25px;
+}
+.UIShow .text p{
+    float: left;
+}
+.UIShow  img{
+  margin-top: 5px;
+}
+.UIShow h5,.month{
+    font-weight: bold;
+}
+.UIShow .itemcard :hover{
+   background-color: #755bb1;
+}
+.col-8 svg{
+    color: black;
+}
+.Outleft{
+    float: left;
+}
+.Outright svg{
+    float: right;
+    margin-right: 20px;
+}
+.OutputTitle h5{
+    margin-left: 30px;
+}
+.OutputTitle{
+    margin-top: 20px;
+}
+.OutputImg{
+    margin-top: 60px;
+}
