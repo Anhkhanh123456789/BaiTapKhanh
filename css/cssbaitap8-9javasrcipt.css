@@ -34,7 +34,7 @@ li{
 }
 .backgorud
 {
-    background-color: aqua;   
+ 
     height: 100px;
 }
 .ml-5{
@@ -48,7 +48,7 @@ margin-left: 20px;
     padding: 20px;
     padding-left: 80px;
     color: white;
-    background-color: rebeccapurple;
+    background-color: rgb(48, 25, 71);
     border-radius: 20px 20px 0px 0px;
     
 }
@@ -57,9 +57,11 @@ margin-left: 20px;
     padding-left: 80px;
     
     background-color: white;
+    
 }
 .mb-10{
     margin-top: 30px;  
+    margin-bottom: 30px;
 }
 .container .btuAdd{
 background-color: rebeccapurple;
@@ -96,4 +98,38 @@ margin-top: 20px;
 {
     padding: 20px;
     padding-left: 80px;
+    margin-right: 40px;
+}
+.search{
+    float: right;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.colIcon{
+    margin-top: 15px;
+}
+.OKEdit{
+  
+    margin-bottom: 30px;
+}
+.OKEdit a{
+    margin-left: 80px;
+    font-size: 30px;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+  
+    
+
+}
+body{
+    background: linear-gradient(90deg, #512da8 0%, #7b1fa2 100%);
+}
+.input2{
+    background-color: white;
+    
 }
