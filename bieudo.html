@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biểu đồ Trực tiếp với Chart.js</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="chart.js"></script>
+ 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    canvas {
+      width: 100%;
+      height: 400px;
+    }
+    .button-container {
+      margin: 20px 0;
+    }
+    button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Biểu đồ Trực tiếp với Chart.js</h1>
+    <canvas id="myChart"></canvas>
+    <div class="button-container">
+      <button onclick="randomizeData()">Ngẫu nhiên hóa</button>
+      <button onclick="addDataset()">Thêm Dataset</button>
+      <button onclick="addData()">Thêm Dữ liệu</button>
+      <button onclick="removeDataset()">Xóa Dataset</button>
+      <button onclick="removeData()">Xóa Dữ liệu</button>
+    </div>
+  </div>
+
+  <script>
+    // Các hàm tiện ích
+    const Utils = {
+      CHART_COLORS: {
+        red: 'rgb(255, 99, 132)',
+        blue: 'rgb(54, 162, 235)',
+        green: 'rgb(75, 192, 192)',
+        yellow: 'rgb(255, 205, 86)',
+        orange: 'rgb(255, 159, 64)',
+        purple: 'rgb(153, 102, 255)',
+        grey: 'rgb(201, 203, 207)'
+      },
+      transparentize(color, opacity = 0.5) {
+        const alpha = opacity;
+        return `rgba(${color}, ${alpha})`;
+      },
+      rand(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      },
+      numbers({ count = 10, min = 0, max = 100 }) {
+        return Array.from({ length: count }, () => this.rand(min, max));
+      },
+      months({ count = 12 }) {
+        const months = ['Th1', 'Th2', 'Th3', 'Th4', 'Th5', 'Th6', 'Th7', 'Th8', 'Th9', 'Th10', 'Th11', 'Th12'];
+        return months.slice(0, count);
+      },
+      namedColor(index) {
+        const colors = Object.values(this.CHART_COLORS);
+        return colors[index % colors.length];
+      }
+    };
+
+    // Cấu hình biểu đồ
+    const data = {
+      labels: Utils.months({ count: 12 }),
+      datasets: [
+        {
+          label: 'Dataset 1',
+          data: Utils.numbers({ count: 12 }),
+          borderColor: Utils.CHART_COLORS.red,
+          backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
+        },
+        {
+          label: 'Dataset 2',
+          data: Utils.numbers({ count: 12 }),
+          borderColor: Utils.CHART_COLORS.blue,
+          backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
+        }
+      ]
+    };
+
+    const config = {
+      type: 'line',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: 'Biểu đồ Line với Chart.js'
+          }
+        }
+      },
+    };
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, config);
+
+    function randomizeData() {
+      myChart.data.datasets.forEach(dataset => {
+        dataset.data = Utils.numbers({ count: myChart.data.labels.length, min: -100, max: 100 });
+      });
+      myChart.update();
+    }
+
+    function addDataset() {
+      const data = myChart.data;
+      const dsColor = Utils.namedColor(data.datasets.length);
+      const newDataset = {
+        label: 'Dataset ' + (data.datasets.length + 1),
+        backgroundColor: Utils.transparentize(dsColor, 0.5),
+        borderColor: dsColor,
+        data: Utils.numbers({ count: data.labels.length, min: -100, max: 100 }),
+      };
+      data.datasets.push(newDataset);
+      myChart.update();
+    }
+
+    function addData() {
+      const data = myChart.data;
+      if (data.datasets.length > 0) {
+        data.labels.push(Utils.months({ count: 1 })[0]);
+        data.datasets.forEach(dataset => {
+          dataset.data.push(Utils.rand(-100, 100));
+        });
+        myChart.update();
+      }
+    }
+
+    function removeDataset() {
+      myChart.data.datasets.pop();
+      myChart.update();
+    }
+
+    function removeData() {
+      myChart.data.labels.pop();
+      myChart.data.datasets.forEach(dataset => {
+        dataset.data.pop();
+      });
+      myChart.update();
+    }
+  </script>
+</body>
+</html>

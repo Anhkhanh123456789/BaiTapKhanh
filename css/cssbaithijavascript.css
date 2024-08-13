@@ -65,6 +65,10 @@ svg{
 }
 .UIShow{
     background-color: white;
+   
+}
+.col-4{
+    margin-bottom: 10px;
 }
 .itemcard{
     margin-top: 10px;
@@ -97,10 +101,22 @@ svg{
 }
 .OutputTitle h5{
     margin-left: 30px;
+    
 }
 .OutputTitle{
     margin-top: 20px;
 }
 .OutputImg{
     margin-top: 60px;
+    margin-left: 20px;
+}
+.row{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.OutputTitle{
+    margin-left: 20px;
+}
+.OutputImg img{
+    float: left;
 }
