@@ -1,0 +1,34 @@
+.item{
+    background-color:  rgb(44, 43, 43);  
+    margin-top: 200px;
+    width: 100%;
+    float: left;
+   
+}
+.icon{
+    float: left; 
+    margin-top: 50px;
+    margin-left: 200px;
+   
+}
+.icon i{
+    background-color: white;
+    margin-left: 50px;
+    border-radius: 50%;  
+    padding: 10px 15px 10px 15px;
+    font-size: 26px;
+    float: left;  
+}
+.textItem{
+    float: left;
+    margin-top: 30px;
+    margin-left: 140px;
+    margin-bottom: 30px;
+}
+p{
+    color:  white;  
+    margin-left: 60px;
+    float: left;
+    font-size: 20px;  
+    font-weight: 100;  
+}
