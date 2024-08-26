@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="heading">Demo Object</h1>
+    <h2 id ="countdow">10</h2>
+    <h2> <span id = "minutes">10</span>:<span id = "seconds">00</span> </h2>
+    <script type="text/javascript">
+        // var b ={
+        //     name : "Nguyen van a",
+        //     age : 18,
+        //     address :"Ha Noi"
+        // }
+        // alert(b.name);
+        // b.address = "Da nang";
+        // alert(b.address);
+        // b['address'] = "Hai Phong"
+        // alert(b['address']);
+      //  var h = document.getElementById("heading");
+      //  h.innerText ="xin chao tat ca";
+       // h.innerHTML ="<i>Xin chao</i>";
+       // change style
+       //h.style.clor ="red";
+       //h.style.transform = "scale(1.3)";
+       //h.style.backgroundColor = "red";
+       var minutes = document.getElementById("minutes");
+       
+        var seconds = document.getElementById("seconds");
+       var M = 10;
+       var S = 0;
+       var cd = setInterval(delayAlert,1000);
+       function delayAlert(){
+       
+        if(M>=10 && S>=10)
+        {
+        
+            minutes.innerText =`${M}`;
+            seconds.innerText =`${S}`;
+        }
+        else if(M>=10 && S<10)
+        {  
+           
+            minutes.innerText = `${M}`;
+            seconds.innerText =`0${S}`;
+        }
+        else if(M<10 && S<10)
+        {  
+            minutes.innerText = `0${M}`;
+            seconds.innerText =`0${S}`;
+
+        }
+        else if(M<10 && S>=10)
+        {  
+           
+            minutes.innerText = `0${M}`;
+            seconds.innerText =`${S}`;        
+        }
+
+        // Toán tự 3 ngôi
+       // minutes.innerText = M>=10? min : `0${min}`;
+        S--;
+        if(S<0)
+        {
+            S=59;
+            M--;
+        }
+        if(M<0)
+        {
+            clearInterval(cd);
+        }
+       }
+
+    </script>
+</body>
+</html>

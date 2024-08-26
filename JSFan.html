@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/CssJSFan.css">
+</head>
+<body>
+    <h1 id="fan">Fan</h1>
+    <button type="button" onclick="onFan()">ON</button>
+    <button type ="button" onclick="offFan()">OFF</button>
+    <button type="button" id="Speed1" onclick="On1()">1</button>
+    <button type ="button" id ="Speed2" onclick="On2()">2</button>
+    <button type ="button" id ="Speed3" onclick="On3()">3</button>
+    <script type="text/javascript">
+       var runfan = document.getElementById("fan");
+       var btu1 = document.getElementById("Speed1");
+       var btu2 = document.getElementById("Speed2");
+       var btu3 = document.getElementById("Speed3");
+        var speed = 0;
+        var rotation = 0;
+        var speednumber = 0;
+        var cd = null; // Biến interval
+
+        // Hàm chạy interval
+        function startFan() {
+            cd = setInterval(function () {
+                rotation += speed;
+                runfan.style.transform = `rotate(${rotation}deg)`;
+            }, 10);
+        }
+
+        // Hàm bật quạt
+        function onFan() {
+            speed = speednumber;
+            // Kiểm tra nếu interval chưa được bật thì mới bật lại
+            if (cd === null) {
+                startFan();
+            }
+        }
+
+        // Hàm tắt quạt
+        function offFan() {
+            speed = 0;
+            // Lưu giá trị rotation hiện tại trước khi dừng interval
+          //  rotation = rotation % 360; // Chuẩn hóa rotation trong khoảng 0-359 độ
+            // Dừng interval và gán lại biến cd thành null
+            if (cd !== null) {
+                clearInterval(cd);
+                cd = null;
+            }
+            // Cập nhật góc quay về 0 độ khi tắt
+           // runfan.style.transform = `rotate(${rotation}deg)`;
+        }
+        
+        function On1(){
+            speednumber = 1; 
+            speed =1;    
+            btu1.style.backgroundColor = "red";
+            btu2.style.backgroundColor = "aliceblue";
+            btu3.style.backgroundColor = "aliceblue";
+        }
+        function On2(){
+            speednumber = 10;
+            speed = 10;
+            btu1.style.backgroundColor = "aliceblue";
+            btu2.style.backgroundColor = "red";
+            btu3.style.backgroundColor = "aliceblue";
+        }
+        function On3(){
+            speednumber = 20;
+            speed = 20;
+            btu1.style.backgroundColor = "aliceblue";
+            btu2.style.backgroundColor = "aliceblue";
+            btu3.style.backgroundColor = "red";
+
+        }
+    </script>
+
+</body>
+</html>

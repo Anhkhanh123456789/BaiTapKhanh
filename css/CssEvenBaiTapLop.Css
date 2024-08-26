@@ -1,0 +1,43 @@
+h1{
+    background-color: greenyellow;
+    width: 200px;
+    border-radius: 50px;
+    padding-left: 40px;
+    position: relative;
+    font-size: 30px; /* Correct property for font size */
+
+}
+.From{
+    margin-top: 200px;
+    margin-left: 200px;
+    position: absolute;
+     display: none; 
+    
+}
+.From .secetion{
+    margin-top: 10px;
+}
+.From .card{
+    
+    background-color: rgb(190, 188, 186);
+    
+}
+input{
+    width: 20rem;
+}
+.From .card-title{
+    text-align: center;
+}
+.From .icon{
+    float: right;
+}
+h5{
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}

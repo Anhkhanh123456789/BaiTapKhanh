@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 1 Câu lệnh là yêu cầu máy tính thực hiện 1 công việc</h1>
+    <script type="text/javascript">
+        console.log("Hello world!");
+        console.log("Welcom to Module 2");
+        // quy tắc đặt tên biến
+        // Viết liền nhau, không dấu,không khoảng cách
+        //Không có ký tự đặc biệt như ! # @ %... ngoại trừ $
+        // Bắt đầu bảng chữ cái,không được bất đầu bằng số
+        //Không được dùng các từ khóa của ngôn ngữ
+        var x =5;
+
+        //Kiểu dữ liệu
+        //Number
+        var n = 3.14159;
+        // String
+        var s = "TechStack2405";
+        var s1 = "Welcom";
+        // Boolean
+        var t = true;
+        var f = false;
+        // Null
+        var nu = null;
+        // Undefined chưa được khai báo
+        var un = undefined;// Gặp khi chúng ta sự dụng tính toán với 1 biến nhưng biến đó không tồn tại
+        // các biến có thể thay đổi kiểu dữ liệu được
+        // vị dụ biến n ở trên (Number)
+        n="Say Hi";
+        console.log(typeof n);// try vấn kiểu dữ liệu của biến
+        var x1 = 5;
+        var x2 = "4"
+        console.log(x1 + x2);
+        // number + number = number
+        // number + string = string
+        // string + number = string
+        // string + string = string
+        var x3 ="1234";
+        x3 = parseInt(x3); //ép kiểu qua số
+        x3 = ""+x3; //ép kiểu qua string
+        var x4 = "3.12345";
+        var x5 = parseFloat(x4);// ép kiểu về số thực
+
+        // var inputNumber = prompt("Nhập vào trong lượng của bạn");//prompt là hiện ra 1 ô nhập
+        // inputNumber = parseFloat(inputNumber);
+        // if(inputNumber >= 30 && inputNumber<=150)
+        // {
+        //     var f = inputNumber *9.878;
+        //     console.log("Lực rơi xuống F = "+f);
+        // }
+        // else
+        // {
+        //     console.log("Bạn nhập không đúng giá trị");
+        // }
+      
+        //Viết chương trình nhập vào số nguyên là độ dài 2 cảnh hình chữ nhật
+        //tính chu vi và diện tích chữ nhật đó
+        // var LongScene = prompt("Nhập cảnh dài của hình chữ nhật");
+        // LongScene = parseFloat(LongScene);
+        // var ShortScene = prompt("Nhập cảnh ngắn của hình chữ nhật");
+        // ShortScene = parseFloat(ShortScene);
+       
+
+        // if(ShortScene>=LongScene && LongScene<=0 && ShortScene <=0)
+        // {
+        //     console.log("Cảnh ngắn không hợp lệ");
+        // }
+        // else
+        // {
+        //     var perimeter = (LongScene + ShortScene)*2;
+        //     console.log("Chu vi hình chữ nhật là = " +perimeter );
+        //     var acreage =LongScene*ShortScene;
+        //     console.log("Diện tích hình chữ nhât là =" +acreage);
+        // }
+       
+         // console.log(typeof acreage);
+       
+        // var xx=acreage.toFixed(2);// ép về string
+        // console.log(typeof xx);
+    //   var r = Math.random();// tạo 1 biến số ngẫu nhiên
+    //    var r = Math.floor(Math.random() * 101); //Math.floor ép kiểu về số nguyên rồi
+    //     //Lucky number
+    //     //Viết chương trình nhập vào 1 số
+    //     //Sinh ra 1 số nguyên ngẫu từ 0 - 100
+    //     //Kiểm tra người chơi có trung giải hay không
+    //     //In ra số tiền trúng giải hoặc lời chia buồn
+    //     var randomN = parseInt(r); // dư
+    //     var input = prompt("Hay Nhập con số may mắn");
+    //     input = parseInt(input);
+    //     if(input == randomN)
+    //     {
+    //         console.log(`Bạn đã ${input} trúng thưởng`);
+    //     }
+    //     else
+    //     {
+    //         console.log('Chúc may  mắn lần sau');
+    //     }
+    //     console.log("Số bạn chọn là :" +input);
+    //     console.log("Con số may mắn trúng thưởng là : " +randomN);
+
+
+        // 1 số ký hiệu toán tự 
+        var st =0;
+        st++;// st = st+1
+        st--;//st = st-1
+        st *=5; //st  =st*5
+        st /=2;//st =st/2
+        st+=4;//st=st+4;
+        st-=4;//st=st-4;
+         
+        var x5 = 7;
+        var sd = x5%4 ; // chia lấy dư
+
+        //Viết chương trình nhâp 3 số là 3 cảnh tam giác
+        // tính chu vi và diện tích tam giác (nếu đúng là tam giác)
+        //tính diện tích tam giác bằng công thưc herron
+      
+    //     var hoanthanh = false;
+    //     while(hoanthanh!= true){
+    //     var a = prompt("Nhập cảnh a");
+    //     var b = prompt("Nhập cảnh b");
+    //     var c = prompt("Nhập cảnh c");
+    //     a  = parseFloat(a);
+    //     b = parseFloat(b);
+    //     c = parseFloat(c);
+    //     if(a+b>c && a+c>b && b+c>a && a>0 && b>0&c>0)
+    //     {
+    //         var chuvi = a+b+c;
+    //         var s = chuvi/2;
+    //         alert(`Chu vi tam giác : ${chuvi}`);
+    //         var herron  = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    //         console.log(`Chu vi là : ${chuvi} và Diện tích là : ${herron}`);
+    //         alert(`Dien tich tam giác : ${herron}`);
+    //         hoanthanh = true;
+
+    //     }
+    //     else
+    //     {
+    //         console.log("Không phải là hình tam giác");
+    //         alert("Đây không phải là độ dài của 3 cảnh tam giác");
+    //         var check = confirm("Bạn có muốn nhập lại hay không");
+    //         if(check == true){
+    //             hoanthanh = false;
+    //         }
+    //         else{
+    //             hoanthanh = true;
+    //         }
+    //     }
+       
+    // }
+    // alert("Kết thúc tính toán");
+    // Viết chương trình tính lãi suất ngân hàng 
+    // input : Khách hàng nhập vào số tiền muốn gửi và số năm muốn gửi
+    // process : Lãi suất có định 8%/năm -- lãi kép(lãi cộng dồn và gốc)
+    // Output : tính tổng số tiền khách thu về sau khi gửi tiết kiểm
+
+
+    // Thêm
+    // input : KH nhập số tiền muốn gửi và số tiền ít nhất muốn có
+    //poress : Lãi suất cố định 8% mỗi năm và lãi kép
+    // Output tính số năm tối thiếu cần gửi để đặt dc số tiền yêu cầu như trên
+
+    // var isEnd = true;
+    // while(isEnd == true)
+    // {
+    //     var Sendmonney = prompt("Nhập số tiền muốn gửi ");
+    //     var SendYear = prompt("Nhập số năm muốn gửi"); 
+    //     Sendmonney = parseFloat(Sendmonney);
+    //     SendYear = parseInt(SendYear);
+    //     var numberYear = 1;
+    //     while(numberYear<=SendYear)
+    //     {          
+    //         Sendmonney = Sendmonney+Sendmonney*0.08;        
+    //         numberYear++;
+    //     }
+    //     alert(`Số tiền thu về ${Sendmonney}`);
+    //     var comeback = confirm("Bạn có muốn tính lại")
+    //     if(comeback == true)
+    //     {
+    //         isEnd = true
+    //     }
+    //     else
+    //     {
+    //         alert("Kết thúc hẹn gặp lại");
+    //         isEnd = false;
+    //     }
+
+    // }
+    // var Sendmonney2 = prompt("Số tiền muốn gửi");
+    // var resultmoney = prompt("Số tiền muốn có");
+    // Sendmonney2 = parseFloat(Sendmonney2);
+    // resultmoney = parseFloat(resultmoney);
+    // var Yead = 1;
+    // while(Sendmonney2<=resultmoney)
+    // {
+    //     Sendmonney2=Sendmonney2+Sendmonney2*0.08;
+    //     Yead++;
+
+    // }
+    // alert(`Số nằm để có tiền là ${Yead}`);
+
+     
+    // tính S = 1+2+3+....+n
+    // var n = prompt("Nhập n");
+    // n = parseInt(n);
+    // var number = 1;
+    // var S = 0;
+    // while(number<=n)
+    // {
+      
+    //     S = S+number;
+    //     number++;
+    // }
+    // alert(`Số S : ${S}`);
+    
+
+    // Nhập 1 số nguyên n
+    // tìm số ở vị trí thứ n trong dãy Fibinaci
+    // var nFi = prompt("Nhập vị trí số Fibonaci vị trí tính từ 0");
+    // nFi = parseInt(nFi);
+    // var Fn = 1;
+    // var Fo = 0;
+    // var Fm = 1;
+    // var i;
+    // if(nFi<0)
+    // {
+    //     Fn= 0;
+    // }
+    // else if(nFi ==1 || nFi ==2)
+    // {
+    //     Fn =1;
+    // }
+    // else 
+    // {
+    //     for(i = 2; i< nFi;i++)
+    //     {          
+    //         Fo = Fm;
+    //         Fm = Fn;
+    //         Fn = Fo+Fm;
+    //     }
+    // }
+   
+    // alert(`kết quả ${Fn}`);
+
+    var numberFI = prompt("Nhập Sô Fibinaci");
+    numberFI = parseInt(numberFI);
+    
+    var Fn = 1;
+    var Fo = 0;
+    var Fm = 1;
+    if(numberFI <= 0)
+    {
+       Fn = 0;
+    }
+    else if(numberFI == 1 || numberFI == 2)
+    {
+        Fn = 1;
+    }
+    else
+    {
+       
+        while(Fn+Fm<numberFI)
+        {
+            Fo = Fm;
+            Fm = Fn;
+            Fn = Fo+Fm;
+        }
+    }
+    alert(`kết quả Số nhỏ gần nhất ${Fn}`);
+  
+    </script>
+</body>
+</html>

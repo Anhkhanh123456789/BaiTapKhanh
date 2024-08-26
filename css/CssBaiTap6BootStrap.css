@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #565656;
+    text-align: left;
+    line-height: 1.5;
+}
+a{
+    text-decoration:  none;
+}
+img{
+    max-width: 80%;
+
+}
+li{
+    list-style: none;
+  
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header .bg-rowlv1{
+    border-bottom: 1px solid green;
+    padding-left: 70px;
+    border-radius: 0 0 20px 20px;
+    background-color: green;
+    color: white;
+    width: 1320px;
+    margin-left: -10px;
+    
+
+}
+.GetStartedLV1{
+    background-color: green;
+    height: 60px;
+    width: 40%;
+  padding-top: 12px;
+  border-radius: 20px;
+}
+.header .Dis{
+    font-size: 25px;
+}
+.header svg{
+    width: 25%;
+}
+.header .Lv1{
+    padding-top: 5px;
+}
+.header .Small{
+    margin-top: 100px;   
+    padding-left: 70px;
+}
+.header .getvl1{
+  float: left;
+  font-size: 16px;
+}
+.header .One{
+    width: 120%;
+}
+.header .two{
+   margin-left: 50px;
+  margin-top: -28px;
+   font-size: 16px;
+    background-color:white;
+    border-radius: 20px;
+   padding: 10px;
+   color: green;
+}
+.header h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: green;
+    text-transform: capitalize;
+}
+.header h4{
+    color: #8d8989;
+}
+.header p{
+    float: left; 
+}
+.header .p1{
+    background-color: green;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 40px;
+    color:white;
+}
+.header .p2{
+    background-color: yellow;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 40px;
+    margin-left: 50px;
+    color:black;
+}
+.header .There{
+    padding-top: 20px;
+}
+.header .imgcol{
+    background-image: url('../images/HinhBT6.PNG');
+    background-size: cover;   
+    height: 500px;
+    border-radius: 40px;
+    width: 120%;
+    margin-left: 300px;
+    
+}
+.header .container{
+    background-color: antiquewhite;
+    padding-bottom: 120px;
+}
+.Mana .container{
+    background-color: green;
+}
+.Mana .container{
+    padding-top: 50px;
+    padding-left: 70px;  
+}
+.Mana h2{
+padding-left: 15px;
+}
+.Mana .collv2{
+    padding-left: 208px;
+    
+}
+.h2Mana{
+    color:white
+  
+}
+.card-text{
+    color: white
+}
+.Manarow1 .card{
+    padding: 50px;
+}
+.Manarow2 .card{
+    padding: 30px;
+    text-align: center;
+}
+.Mana .Manarow2{
+    padding-bottom: 40px;
+}
+.Manarow2 .col22{
+    margin-left: -2px;
+}
+.Manarow2 .col23{
+    margin-left: -12px; 
+}
+.Process .container{
+    padding-top: 100px;
+    padding-left: 70px;
+    background-color:antiquewhite; 
+    height: 1300px;
+    
+}
+.Process .textProcess{
+float: left;
+}
+.Process .MinuGround{
+    background-color:  green;
+    height: 70px;
+    width: 150px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+}
+.Process .TwoP{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: white;
+    height: 50px;
+    border-radius: 40px;
+   padding-top: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+    color: green;
+    
+}
+.Process .OneP{
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+.Process .Bus{
+    color: green;
+    font-weight: 700;
+    text-align:  left;
+}
+.Process .h4Bus{
+    color: #8d8989;
+    font-size: 20px;
+    width: 80%;
+}
+.Process .MaxGround{
+    padding-left: 100px;
+}
+.Process .card-custom {
+    border: 4px solid green; /* Màu viền đỏ */
+    border-radius: 40px; /* Bo tròn các góc */
+    background-color: antiquewhite; 
+    
+}
+.Mana .card-custom1{
+    background-color: rgb(5, 82, 5);
+    color: white;
+    border-radius: 30px;
+}
+.Process .Bigground{
+    padding: 50px;
+    padding-bottom: 20px;
+}
+.Process .step{
+    float: left;
+    font-weight: bold;
+    color: green;
+}
+.Process .cardGround{
+    background-color: yellow;
+    height: 48px;
+    width: 180px;
+   padding-top: 8px;
+   padding-left: 10px;
+   border-radius: 20px;
+}
+.Process .week{
+    background-color: green;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    margin-left: 5px;
+    color: white;
+}
+.Process .sOne{
+    padding-top: 5px;
+}
+.Process .h2Process{
+    padding-top: 50px;
+    color:green ;
+    font-weight: 700;
+    font-size: 25px;
+}
+.Process .card-textProcess{
+    margin-left: -10px;
+    font-size: 16px;
+    color: #8d8989;
+}
+
+.How .container{
+    background-color: green;
+    height: 200px;
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+}
+.How h1{
+    font-size: 50px;
+}

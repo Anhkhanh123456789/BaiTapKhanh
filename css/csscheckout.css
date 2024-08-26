@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #565656;
+    text-align: left;
+    line-height: 1.5;
+}
+a{
+    text-decoration:  none;
+}
+img{
+    max-width: 100%;
+
+}
+li{
+    list-style: none;
+  
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1400px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.nav h1{
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 10px 10px 0px 0px;
+}
+.nav .bacrkRowBig{
+    background-color: #c9c5c5;
+    height: 750px;
+    margin-top: -10px;
+    
+}
+.nav .backRowSmal{
+    background-color: white;
+    height: 530px;
+    margin: 40px;
+    margin-top: -710px;  
+}
+.nav .item{
+    padding: 40px;
+}
+.nav .card{
+    border: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card input{
+    margin-top: -10px;
+    font-size: 24px;
+    width: 100%; 
+}
+.card .text{
+    font-weight: 600;
+}
+.btu{    
+   margin-top: 70px; 
+}
+.btu .btuContinue{
+    background-color:rgb(233, 113, 113);
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 885px; 
+} 

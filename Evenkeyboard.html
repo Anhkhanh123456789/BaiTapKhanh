@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Keyboard event</h1>
+    <input type="text" placeholder="Enter..."
+    id ="ipx"
+    onkeydown="enterKeyDown()"
+    onkeyup="enterKeyUp(this)"
+    />
+    <p id="msg" style="display: none;"> Vui lòng nhập thông tin</p>
+    <select name="country" onchange="selectChange(this)">
+        <option value="VN">VN</option>
+        <option value="US">US</option>
+        <option value="UK">UK</option>
+
+    </select>
+    <script type ="text/javascript">
+        function enterKeyDown(){
+            var ipx = document.getElementById("ipx");
+            var v = ipx.value;
+            console.log(`Key down---${v}`)
+        }
+        function enterKeyUp(e){
+            var v = e.value;
+            console.log(`Key up....${v}`)
+            if(event.keyCode==13 && v.length<6){
+                console.log("123");
+                var msg = document.getElementById("msg");
+                msg.innerText = "Vui lòng nhập tên có đọ dài tối thiều 6";
+                msg.style.display = "block";
+               
+            }
+            else{
+                var msg = document.getElementById("msg");               
+                msg.style.display = "none";
+            }
+        }
+        function selectChange(e){
+            var v = e.value;
+            console.log(v);
+        }
+    </script>
+
+</body>
+</html>

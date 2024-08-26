@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Real Time</h1>
+    <h2><span id = "Hours">12</span>:<span id="Minute">00</span>:<span id = "Seconds">00</span></h2>
+    <script type="text/javascript">
+        var hours = document.getElementById("Hours");
+        var minute = document.getElementById("Minute");
+        var second = document.getElementById("Seconds");
+        var currentTime = new Date();
+        var realhours = currentTime.getHours();
+        var realminutes = currentTime.getMinutes();
+        var realseconds = currentTime.getSeconds();
+        var ho = parseInt(realhours);
+        var min = parseInt(realminutes);
+        var se = parseInt(realseconds);
+        
+        function realTime(){
+            se++;
+            if(se>=60)
+            {
+                se = 0;
+                min++;
+            }
+            if(min>=60)
+            {
+                min =0;
+                ho++;
+            }
+            if(ho >=24)
+            {
+                ho = 0;
+            }
+              // minutes.innerText = M>=10? min : `0${min}`;
+            second.innerText = se>=10 ? se : `0${se}`;
+            minute.innerText = min>=10 ? min : `0${min}`;
+            hours.innerText = ho>=10 ? ho : `0${ho}`;
+        }
+        setInterval(realTime, 990);
+    </script>
+</body>
+</html>
